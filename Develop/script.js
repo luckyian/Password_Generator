@@ -11,8 +11,6 @@
 //
 // * Gather user input with prompt's and confirm's
 
-
-
 var alphaLower=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
 var alphaUpper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
@@ -22,22 +20,12 @@ var symbol=["/","!","@","#","$","%","&","*","(",")","+",",",".","?"];
 var number=Math.floor(Math.random() * 10);
 
 
-var characterChoice = character[Math.floor(Math.random() * character.length)];
 
-// var countDown = numberLength(arr) {
-
-  // We then loop through the selected array.
-  // for (var i = 0; i < arr.length; i++) {
-
-    // Each time we print the value inside the array.
-    // console.log(arr[i]);
-  // }
-  // console.log("---------");
-// }
 
 function generatePassword () {
 
   if(confirmAlphaLower, confirmAlphaUpper, confirmSymbol, confirmNumber){
+
 
   }
 
@@ -97,11 +85,10 @@ function generatePassword () {
   }
 
   else if(confirmAlphaLower){
-    
+
   }
 
 }
-
 
 
 
@@ -115,7 +102,7 @@ function generatePassword () {
 // * clicking the Generate Password
 // * writing the password to the screen
 //
-confirmSymbol
+
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
@@ -130,7 +117,10 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 //////////////////////////////////////////////////////////////////////
+
 var numberLength = prompt("How many characters do you want in the password?  Must be between 8 and 128. ");
+
+var passLength = parseInt(numberLength);
 
 var confirmAlphaLower = confirm("Do you want lower case letters in the password?");
 
@@ -140,10 +130,9 @@ var confirmSymbol  = confirm("Do you want symbols in the password?");
 
 var confirmNumber = confirm("Do you want numbers in the password?");
 
-
 if(confirmAlphaLower){
   
-  var confirmL = " Lower case letters.  "}
+    var confirmL = " Lower case letters.  "}
 
   else {
     var confirmL = " "}
@@ -151,29 +140,26 @@ if(confirmAlphaLower){
 
 if(confirmAlphaUpper){
   
-  var confirmU =  " Upper case letters.  "}
+    var confirmU =  " Upper case letters.  "}
+  
   else{
     var confirmU =  " "}
   
-
 if(confirmSymbol){
   
-  var confirmS = " Symbols.  "}
-else { 
+    var confirmS = " Symbols.  "}
+  
+  else { 
 
-  var confirmS = " "}
-
+    var confirmS = " "}
 
 if(confirmNumber){
   
-  var confirmN = " Numbers.  "}
+    var confirmN = " Numbers.  "}
 
-else {
+  else {
+  
+    var confirmN = " "
+  }
 
-  var confirmN = " "
-}
-
-var confirmAll = alert("You have choosen: " + confirmL + confirmU + confirmS + confirmN + "With a length of " + parseInt(numberLength) + ".")
-
- 
-
+  var confirmAll = alert("You have choosen: " + confirmL + confirmU + confirmS + confirmN + "With a length of " + passLength + ".")
