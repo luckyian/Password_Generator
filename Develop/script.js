@@ -24,51 +24,54 @@ var number=Math.floor(Math.random() * 10);
 
 function generatePassword () {
 
-  if(confirmAlphaLower, confirmAlphaUpper, confirmSymbol, confirmNumber){
+  if(confirmAlphaLower && confirmAlphaUpper && confirmSymbol && confirmNumber){
+  
+    var array1 = [alphaLower, alphaUpper, symbol, number];
 
-
-  }
-
-  else if (confirmAlphaLower, confirmAlphaUpper, confirmSymbol){ 
-
-  }
-
-  else if(confirmAlphaLower, confirmSymbol, confirmNumber){
+    
 
   }
 
-  else if(confirmAlphaUpper, confirmSymbol, confirmNumber){
+  else if (confirmAlphaLower && confirmAlphaUpper && confirmSymbol){ 
 
   }
 
-  else if(confirmAlphaLower, confirmAlphaUpper, confirmNumber){
+  else if(confirmAlphaLower && confirmSymbol && confirmNumber){
+
+  }
+
+  else if(confirmAlphaUpper && confirmSymbol && confirmNumber){
+
+  }
+
+  else if(confirmAlphaLower && confirmAlphaUpper && confirmNumber){
 
   }
 
 
-  else if(confirmAlphaLower, confirmAlphaUpper){
+  else if(confirmAlphaLower && confirmAlphaUpper){
   
 
   }
 
-  else if(confirmSymbol, confirmNumber){
+  else if(confirmSymbol && confirmNumber){
   
   
   }
   
   
-  else if(confirmAlphaLower, confirmNumber){
+  else if(confirmAlphaLower && confirmNumber){
 
 
   }
 
-  else if(confirmAlphaUpper, confirmNumber){
+  else if(confirmAlphaUpper && confirmNumber){
 
   }
-  else if(confirmAlphaLower, confirmSymbol){
+  else if(confirmAlphaLower && confirmSymbol){
 
   }
-  else if(confirmAlphaUpper, confirmSymbol){
+  else if(confirmAlphaUpper && confirmSymbol){
 
   }
 
