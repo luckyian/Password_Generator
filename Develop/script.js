@@ -34,27 +34,38 @@ function generatePassword () {
 
   else if (confirmAlphaLower && confirmAlphaUpper && confirmSymbol){ 
 
+    var array2 = [alphaLower, alphaUpper, symbol];
   }
 
   else if(confirmAlphaLower && confirmSymbol && confirmNumber){
+
+    var array3 = [alphaLower, symbol, number];
 
   }
 
   else if(confirmAlphaUpper && confirmSymbol && confirmNumber){
 
+    var array4 = [alphaUpper, symbol, number];
+
   }
 
   else if(confirmAlphaLower && confirmAlphaUpper && confirmNumber){
+
+    var array5 = [alphaLower, alphaUpper, number];
 
   }
 
 
   else if(confirmAlphaLower && confirmAlphaUpper){
+
+    var array6 = [alphaLower, alphaUpper];
   
 
   }
 
   else if(confirmSymbol && confirmNumber){
+
+    var array7 = [symbol, number];
   
   
   }
@@ -62,16 +73,24 @@ function generatePassword () {
   
   else if(confirmAlphaLower && confirmNumber){
 
+    var array8 = [alphaLower, number];
+
 
   }
 
   else if(confirmAlphaUpper && confirmNumber){
 
+    var array9 = [alphaUpper, number];
+
   }
   else if(confirmAlphaLower && confirmSymbol){
 
+    var array10 = [alphaLower, symbol];
+
   }
   else if(confirmAlphaUpper && confirmSymbol){
+
+    var array1 = [alphaUpper, symbol];
 
   }
 
