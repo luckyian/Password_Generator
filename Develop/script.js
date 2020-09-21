@@ -10,6 +10,9 @@
 //   generatePassword
 //
 // * Gather user input with prompt's and confirm's
+function generatePassword () {
+
+
 
 var alphaLower=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
@@ -21,8 +24,6 @@ var number=Math.floor(Math.random() * 10);
 
 
 
-
-function generatePassword () {
 
   if(confirmAlphaLower && confirmAlphaUpper && confirmSymbol && confirmNumber){
   
@@ -140,6 +141,10 @@ generateBtn.addEventListener("click", writePassword);
 
 //////////////////////////////////////////////////////////////////////
 
+var characterConfirm = false;
+
+while (characterConfirm === false) {
+
 var numberLength = prompt("How many characters do you want in the password?  Must be between 8 and 128. ");
 
 var passLength = parseInt(numberLength);
@@ -152,6 +157,15 @@ var confirmSymbol  = confirm("Do you want symbols in the password?");
 
 var confirmNumber = confirm("Do you want numbers in the password?");
 
+if (confirmAlphaLower === false && confirmAlphaUpper === false && confirmSymbol === false && confirmNumber === false) {
+  alert("You must confirm at least one character type to be included in your password");
+}
+else {
+
+    characterConfirm = true;
+   }
+
+}
 if(confirmAlphaLower){
   
     var confirmL = " Lower case letters.  "}
@@ -183,5 +197,6 @@ if(confirmNumber){
   
     var confirmN = " "
   }
-
+ 
+  
   var confirmAll = alert("You have choosen: " + confirmL + confirmU + confirmS + confirmN + "With a length of " + passLength + ".")
