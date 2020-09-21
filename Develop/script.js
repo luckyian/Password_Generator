@@ -130,7 +130,7 @@ else {
   var confirmN = " "
 }
 
-var confirmAll = confirm("You have choosen: " + confirmL + confirmU + confirmS + confirmN + "With a length of " + parseInt(numberLength) + ".")
+var confirmAll = alert("You have choosen: " + confirmL + confirmU + confirmS + confirmN + "With a length of " + parseInt(numberLength) + ".")
 
  
 
