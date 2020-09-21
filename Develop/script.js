@@ -12,135 +12,6 @@
 // * Gather user input with prompt's and confirm's
 function generatePassword () {
 
-
-
-var alphaLower=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-
-var alphaUpper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-
-var symbol=["/","!","@","#","$","%","&","*","(",")","+",",",".","?"];
-
-var number=Math.floor(Math.random() * 10);
-
-
-
-
-  if(confirmAlphaLower && confirmAlphaUpper && confirmSymbol && confirmNumber){
-  
-    var array1 = [alphaLower, alphaUpper, symbol, number];
-
-    
-
-  }
-
-  else if (confirmAlphaLower && confirmAlphaUpper && confirmSymbol){ 
-
-    var array2 = [alphaLower, alphaUpper, symbol];
-  }
-
-  else if(confirmAlphaLower && confirmSymbol && confirmNumber){
-
-    var array3 = [alphaLower, symbol, number];
-
-  }
-
-  else if(confirmAlphaUpper && confirmSymbol && confirmNumber){
-
-    var array4 = [alphaUpper, symbol, number];
-
-  }
-
-  else if(confirmAlphaLower && confirmAlphaUpper && confirmNumber){
-
-    var array5 = [alphaLower, alphaUpper, number];
-
-  }
-
-
-  else if(confirmAlphaLower && confirmAlphaUpper){
-
-    var array6 = [alphaLower, alphaUpper];
-  
-
-  }
-
-  else if(confirmSymbol && confirmNumber){
-
-    var array7 = [symbol, number];
-  
-  
-  }
-  
-  
-  else if(confirmAlphaLower && confirmNumber){
-
-    var array8 = [alphaLower, number];
-
-
-  }
-
-  else if(confirmAlphaUpper && confirmNumber){
-
-    var array9 = [alphaUpper, number];
-
-  }
-  else if(confirmAlphaLower && confirmSymbol){
-
-    var array10 = [alphaLower, symbol];
-
-  }
-  else if(confirmAlphaUpper && confirmSymbol){
-
-    var array1 = [alphaUpper, symbol];
-
-  }
-
-  else if(confirmNumber){
-
-  }
-
-  else if(confirmSymbol){
-
-  }
-
-  else if(confirmAlphaUpper){
-
-  }
-
-  else if(confirmAlphaLower){
-
-  }
-
-}
-
-
-
-
-
-
-///////////////////////////////////////////////////////////////////////
-// DO NOT TOUCH THIS CODE
-//
-// This code handles:
-// * clicking the Generate Password
-// * writing the password to the screen
-//
-
-var generateBtn = document.querySelector("#generate");
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
-//////////////////////////////////////////////////////////////////////
-
 var characterConfirm = false;
 
 while (characterConfirm === false) {
@@ -199,4 +70,181 @@ if(confirmNumber){
   }
  
   
-  var confirmAll = alert("You have choosen: " + confirmL + confirmU + confirmS + confirmN + "With a length of " + passLength + ".")
+var confirmAll = alert("You have choosen: " + confirmL + confirmU + confirmS + confirmN + "With a length of " + passLength + ".")
+   
+
+
+var alphaLower=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+var alphaUpper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+var symbol=["/","!","@","#","$","%","&","*","(",")","+",",",".","?"];
+
+var number = [0,1,2,3,4,5,6,7,8,9];
+
+
+
+
+  if(confirmAlphaLower && confirmAlphaUpper && confirmSymbol && confirmNumber){
+    for (var i = 0; i < passLength; i++) {
+      
+    
+    var array1 = [alphaLower, alphaUpper, symbol, number];
+
+    var newRand = array1[Math.floor(Math.random() * array1.length)];
+    var newPass = newRand[Math.floor(Math.random() * newRand.length)];
+    console.log(newPass);
+  }
+
+  }
+
+  else if (confirmAlphaLower && confirmAlphaUpper && confirmSymbol){ 
+
+    for (var i = 0; i < passLength; i++) {
+    var array2 = [alphaLower, alphaUpper, symbol];
+    var newRand = array2[Math.floor(Math.random() * array2.length)];
+    var newPass = newRand[Math.floor(Math.random() * newRand.length)];
+    console.log(newPass);
+  }
+  }
+
+  else if(confirmAlphaLower && confirmSymbol && confirmNumber){
+
+    for (var i = 0; i < passLength; i++) {
+    var array3 = [alphaLower, symbol, number];
+    var newRand = array3[Math.floor(Math.random() * array3.length)];
+    var newPass = newRand[Math.floor(Math.random() * newRand.length)];
+    console.log(newPass);
+  }
+
+  }
+
+  else if(confirmAlphaUpper && confirmSymbol && confirmNumber){
+    for (var i = 0; i < passLength; i++) {
+    var array4 = [alphaUpper, symbol, number];
+    var newRand = array4[Math.floor(Math.random() * array4.length)];
+    var newPass = newRand[Math.floor(Math.random() * newRand.length)];
+    console.log(newPass);
+  }
+
+  }
+
+  else if(confirmAlphaLower && confirmAlphaUpper && confirmNumber){
+    for (var i = 0; i < passLength; i++) {
+    var array5 = [alphaLower, alphaUpper, number];
+    var newRand = array5[Math.floor(Math.random() * array5.length)];
+    var newPass = newRand[Math.floor(Math.random() * newRand.length)];
+    console.log(newPass);
+  }
+
+  }
+
+
+  else if(confirmAlphaLower && confirmAlphaUpper){
+    for (var i = 0; i < passLength; i++) {
+    var array6 = [alphaLower, alphaUpper];
+    var newRand = array6[Math.floor(Math.random() * array6.length)];
+    var newPass = newRand[Math.floor(Math.random() * newRand.length)];
+    console.log(newPass);
+  }
+      
+
+  }
+
+  else if(confirmSymbol && confirmNumber){
+    for (var i = 0; i < passLength; i++) {
+    var array7 = [symbol, number];
+    var newRand = array7[Math.floor(Math.random() * array7.length)];
+    var newPass = newRand[Math.floor(Math.random() * newRand.length)];
+    console.log(newPass);
+  }
+  
+  
+  }
+  
+  
+  else if(confirmAlphaLower && confirmNumber){
+    for (var i = 0; i < passLength; i++) {
+    var array8 = [alphaLower, number];
+    var newRand = array8[Math.floor(Math.random() * array8.length)];
+    var newPass = newRand[Math.floor(Math.random() * newRand.length)];
+    console.log(newPass);
+  }
+
+
+  }
+
+  else if(confirmAlphaUpper && confirmNumber){
+    for (var i = 0; i < passLength; i++) {
+    var array9 = [alphaUpper, number];
+    var newRand = array9[Math.floor(Math.random() * array9.length)];
+    var newPass = newRand[Math.floor(Math.random() * newRand.length)];
+    console.log(newPass);
+  }
+
+  }
+  else if(confirmAlphaLower && confirmSymbol){
+    for (var i = 0; i < passLength; i++) {
+    var array10 = [alphaLower, symbol];
+    var newRand = array10[Math.floor(Math.random() * array10.length)];
+    var newPass = newRand[Math.floor(Math.random() * newRand.length)];
+    console.log(newPass);
+  }
+
+  }
+  else if(confirmAlphaUpper && confirmSymbol){
+    for (var i = 0; i < passLength; i++) {
+    var array11 = [alphaUpper, symbol];
+    var newRand = array11[Math.floor(Math.random() * array11.length)];
+    var newPass = newRand[Math.floor(Math.random() * newRand.length)];
+    console.log(newPass);
+  }
+
+  }
+
+  else if(confirmNumber){
+    for (var i = 0; i < passLength; i++) {}
+  }
+
+  else if(confirmSymbol){
+    for (var i = 0; i < passLength; i++) {}
+  }
+
+  else if(confirmAlphaUpper){
+    for (var i = 0; i < passLength; i++) {}
+  }
+
+  else if(confirmAlphaLower){
+    for (var i = 0; i < passLength; i++) {}
+
+  }
+
+}
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////
+// DO NOT TOUCH THIS CODE
+//
+// This code handles:
+// * clicking the Generate Password
+// * writing the password to the screen
+//
+
+var generateBtn = document.querySelector("#generate");
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
+//////////////////////////////////////////////////////////////////////
