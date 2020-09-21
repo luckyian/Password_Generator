@@ -8,14 +8,14 @@ Once the total number characters is reached, the function writes the array "fina
 
 ## Screen Examples
 
-![First Page](.\Assets\Home.png)
-![On Click](.\Assets\Initial-prompt.png)
-![Lower Case Confirm](.\Assets\Lower-case-confirm.png)
-![Upper Case Confirm](.\Assets\Upper-case-confirm.png)
-![Symbols confirm](.\Assets\Symbols-confirm.png)
-![Numbers confirm](.\Assets\Numbers-confirm.png)
-![Selections Alert](.\Assets\Selections-Input-Alert.png)
-![Final Result](.\Assets\Final-Result.png)
+![First Page](..\Assets\Home.png)
+![On Click](..\Assets\Initial-prompt.png)
+![Lower Case Confirm](..\Assets\Lower-case-confirm.png)
+![Upper Case Confirm](..\Assets\Upper-case-confirm.png)
+![Symbols confirm](..\Assets\Symbols-confirm.png)
+![Numbers confirm](..\Assets\Numbers-confirm.png)
+![Selections Alert](..\Assets\Selections-Input-Alert.png)
+![Final Result](..\Assets\Final-Result.png)
 
 
 ## Built with the following tech:
