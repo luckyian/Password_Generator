@@ -12,8 +12,13 @@
 // * Gather user input with prompt's and confirm's
 function generatePassword () {
 
-var characterConfirm = false;
 
+
+  // Prompt and confirms to get user input used in code.
+
+
+  var characterConfirm = false;
+  // While statement to make sure that user chooses a character type(s) for the password.
 while (characterConfirm === false) {
 
 var numberLength = prompt("How many characters do you want in the password?  Must be between 8 and 128. ");
@@ -35,7 +40,7 @@ else {
 
     characterConfirm = true;
    }
-
+// Set of code to return to user their selections before displaying generated password.
 }
 if(confirmAlphaLower){
   
@@ -72,7 +77,7 @@ if(confirmNumber){
   
 var confirmAll = alert("You have choosen: " + confirmL + confirmU + confirmS + confirmN + "With a length of " + passLength + ".")
    
-
+// Sets of variable arrays with characters for the password divided by character type.
 
 var alphaLower=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
@@ -82,8 +87,11 @@ var symbol=["/","!","@","#","$","%","&","*","(",")","+",",",".","?"];
 
 var number = [0,1,2,3,4,5,6,7,8,9];
 
+// Variable to store characters selected for password.
+
 var finalPass=[]
 
+// If and if else statements to use input from user to generate password based on selections in confirms.
 
   if(confirmAlphaLower && confirmAlphaUpper && confirmSymbol && confirmNumber){
     for (var i = 0; i < passLength; i++) {
@@ -243,7 +251,10 @@ var finalPass=[]
       finalPass.push(newPass)}
 
   }
+  
+  
   console.log(finalPass);
+  // Return statement to display new password to user.
   return finalPass.join("");
 }
 
