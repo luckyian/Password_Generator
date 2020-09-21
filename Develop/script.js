@@ -21,9 +21,8 @@ var symbol=["/","!","@","#","$","%","&","*","(",")","+",",",".","?"];
 
 var number=Math.floor(Math.random() * 10);
 
-var character=[alphaLower, alphaUpper, symbol, number];
 
-var characterChoice = character[Math.floor(Math.random() * character.length)]
+var characterChoice = character[Math.floor(Math.random() * character.length)];
 
 // var countDown = numberLength(arr) {
 
@@ -38,31 +37,75 @@ var characterChoice = character[Math.floor(Math.random() * character.length)]
 
 function generatePassword () {
 
-  if( countDown > 0){
+  if(confirmAlphaLower, confirmAlphaUpper, confirmSymbol, confirmNumber){
+
+  }
+
+  else if (confirmAlphaLower, confirmAlphaUpper, confirmSymbol){ 
+
+  }
+
+  else if(confirmAlphaLower, confirmSymbol, confirmNumber){
+
+  }
+
+  else if(confirmAlphaUpper, confirmSymbol, confirmNumber){
+
+  }
+
+  else if(confirmAlphaLower, confirmAlphaUpper, confirmNumber){
+
+  }
+
+
+  else if(confirmAlphaLower, confirmAlphaUpper){
   
 
-
-  if(confirmAlphaLower){ 
-    var alphaChoice = alphaLower[Math.floor(Math.random() * alpha.length)];
-
-
   }
 
-  if(confirmSymbol){
-    var symbolChoice = symbol[Math.floor(Math.random() * symbol.length)];
-
-  }
-
-  if(confirmNumber){
-   var numberChoice = number;
+  else if(confirmSymbol, confirmNumber){
+  
   
   }
+  
+  
+  else if(confirmAlphaLower, confirmNumber){
+
+
+  }
+
+  else if(confirmAlphaUpper, confirmNumber){
+
+  }
+  else if(confirmAlphaLower, confirmSymbol){
+
+  }
+  else if(confirmAlphaUpper, confirmSymbol){
+
+  }
+
+  else if(confirmNumber){
+
+  }
+
+  else if(confirmSymbol){
+
+  }
+
+  else if(confirmAlphaUpper){
+
+  }
+
+  else if(confirmAlphaLower){
+    
+  }
+
 }
 
 
 
 
-}
+
 
 
 ///////////////////////////////////////////////////////////////////////
@@ -72,7 +115,7 @@ function generatePassword () {
 // * clicking the Generate Password
 // * writing the password to the screen
 //
-
+confirmSymbol
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
@@ -93,7 +136,7 @@ var confirmAlphaLower = confirm("Do you want lower case letters in the password?
 
 var confirmAlphaUpper = confirm("Do you want upper case letters in the password?");
 
-var confirmSymbol = confirm("Do you want symbols in the password?");
+var confirmSymbol  = confirm("Do you want symbols in the password?");
 
 var confirmNumber = confirm("Do you want numbers in the password?");
 
