@@ -12,13 +12,11 @@
 // * Gather user input with prompt's and confirm's
 function generatePassword () {
 
+// Prompt and confirms to get user input used in code.
 
+var characterConfirm = false;
 
-  // Prompt and confirms to get user input used in code.
-
-
-  var characterConfirm = false;
-  // While statement to make sure that user chooses a character type(s) for the password.
+// While statement to make sure that user chooses a character type(s) for the password.
 while (characterConfirm === false) {
 
 var numberLength = prompt("How many characters do you want in the password?  Must be between 8 and 128. ");
