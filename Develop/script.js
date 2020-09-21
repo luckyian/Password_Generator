@@ -21,7 +21,7 @@ var symbol=["/","!","@","#","$","%","&","*","(",")","+",",",".","?"];
 
 var number=Math.floor(Math.random() * 10);
 
-var character=[alpha, symbol, number];
+var character=[alphaLower, alphaUpper, symbol, number];
 
 var characterChoice = character[Math.floor(Math.random() * character.length)]
 
@@ -87,12 +87,50 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 //////////////////////////////////////////////////////////////////////
-var numberLength = prompt("How many characters do you want in the password?");
+var numberLength = prompt("How many characters do you want in the password?  Must be between 8 and 128. ");
 
-var confirmAlphaLower = confirm("Do you want letters in the password?");
+var confirmAlphaLower = confirm("Do you want lower case letters in the password?");
 
-var confirmAlphaUpper = confirm("Do you want uppercase letters in the password?")
+var confirmAlphaUpper = confirm("Do you want upper case letters in the password?");
 
 var confirmSymbol = confirm("Do you want symbols in the password?");
 
 var confirmNumber = confirm("Do you want numbers in the password?");
+
+
+if(confirmAlphaLower){
+  
+  var confirmL = " Lower case letters.  "}
+
+  else {
+    var confirmL = " "}
+  
+
+if(confirmAlphaUpper){
+  
+  var confirmU =  " Upper case letters.  "}
+  else{
+    var confirmU =  " "}
+  
+
+if(confirmSymbol){
+  
+  var confirmS = " Symbols.  "}
+else { 
+
+  var confirmS = " "}
+
+
+if(confirmNumber){
+  
+  var confirmN = " Numbers.  "}
+
+else {
+
+  var confirmN = " "
+}
+
+var confirmAll = confirm("You have choosen: " + confirmL + confirmU + confirmS + confirmN + "With a length of " + parseInt(numberLength) + ".")
+
+ 
+
