@@ -15,14 +15,22 @@ function generatePassword () {
 // Prompt and confirms to get user input used in code.
 
 var characterConfirm = false;
+var passLengthConfirm = false;
 
 // While statement to make sure that user chooses a character type(s) for the password.
 while (characterConfirm === false) {
-
+while (passLengthConfirm === false) {
 var numberLength = prompt("How many characters do you want in the password?  Must be between 8 and 128. ");
 
 var passLength = parseInt(numberLength);
 
+if (passLength < 8 || passLength > 128){ 
+  alert("Password length must be between 8 and 128 characters.");
+}
+else {
+  passLengthConfirm=true;
+}
+}
 var confirmAlphaLower = confirm("Do you want lower case letters in the password?");
 
 var confirmAlphaUpper = confirm("Do you want upper case letters in the password?");
