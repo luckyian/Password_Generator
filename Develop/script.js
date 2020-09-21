@@ -82,7 +82,7 @@ var symbol=["/","!","@","#","$","%","&","*","(",")","+",",",".","?"];
 
 var number = [0,1,2,3,4,5,6,7,8,9];
 
-
+var finalPass=[]
 
 
   if(confirmAlphaLower && confirmAlphaUpper && confirmSymbol && confirmNumber){
@@ -94,6 +94,7 @@ var number = [0,1,2,3,4,5,6,7,8,9];
     var newRand = array1[Math.floor(Math.random() * array1.length)];
     var newPass = newRand[Math.floor(Math.random() * newRand.length)];
     console.log(newPass);
+    finalPass.push(newPass);
   }
 
   }
@@ -105,6 +106,8 @@ var number = [0,1,2,3,4,5,6,7,8,9];
     var newRand = array2[Math.floor(Math.random() * array2.length)];
     var newPass = newRand[Math.floor(Math.random() * newRand.length)];
     console.log(newPass);
+    finalPass.push(newPass);
+
   }
   }
 
@@ -115,6 +118,7 @@ var number = [0,1,2,3,4,5,6,7,8,9];
     var newRand = array3[Math.floor(Math.random() * array3.length)];
     var newPass = newRand[Math.floor(Math.random() * newRand.length)];
     console.log(newPass);
+    finalPass.push(newPass);
   }
 
   }
@@ -125,6 +129,7 @@ var number = [0,1,2,3,4,5,6,7,8,9];
     var newRand = array4[Math.floor(Math.random() * array4.length)];
     var newPass = newRand[Math.floor(Math.random() * newRand.length)];
     console.log(newPass);
+    finalPass.push(newPass);
   }
 
   }
@@ -135,6 +140,7 @@ var number = [0,1,2,3,4,5,6,7,8,9];
     var newRand = array5[Math.floor(Math.random() * array5.length)];
     var newPass = newRand[Math.floor(Math.random() * newRand.length)];
     console.log(newPass);
+    finalPass.push(newPass);
   }
 
   }
@@ -146,6 +152,7 @@ var number = [0,1,2,3,4,5,6,7,8,9];
     var newRand = array6[Math.floor(Math.random() * array6.length)];
     var newPass = newRand[Math.floor(Math.random() * newRand.length)];
     console.log(newPass);
+    finalPass.push(newPass);
   }
       
 
@@ -157,6 +164,7 @@ var number = [0,1,2,3,4,5,6,7,8,9];
     var newRand = array7[Math.floor(Math.random() * array7.length)];
     var newPass = newRand[Math.floor(Math.random() * newRand.length)];
     console.log(newPass);
+    finalPass.push(newPass);
   }
   
   
@@ -169,6 +177,7 @@ var number = [0,1,2,3,4,5,6,7,8,9];
     var newRand = array8[Math.floor(Math.random() * array8.length)];
     var newPass = newRand[Math.floor(Math.random() * newRand.length)];
     console.log(newPass);
+    finalPass.push(newPass);
   }
 
 
@@ -180,6 +189,7 @@ var number = [0,1,2,3,4,5,6,7,8,9];
     var newRand = array9[Math.floor(Math.random() * array9.length)];
     var newPass = newRand[Math.floor(Math.random() * newRand.length)];
     console.log(newPass);
+    finalPass.push(newPass);
   }
 
   }
@@ -189,6 +199,7 @@ var number = [0,1,2,3,4,5,6,7,8,9];
     var newRand = array10[Math.floor(Math.random() * array10.length)];
     var newPass = newRand[Math.floor(Math.random() * newRand.length)];
     console.log(newPass);
+    finalPass.push(newPass);
   }
 
   }
@@ -198,27 +209,42 @@ var number = [0,1,2,3,4,5,6,7,8,9];
     var newRand = array11[Math.floor(Math.random() * array11.length)];
     var newPass = newRand[Math.floor(Math.random() * newRand.length)];
     console.log(newPass);
+    finalPass.push(newPass);
   }
 
   }
 
   else if(confirmNumber){
-    for (var i = 0; i < passLength; i++) {}
+    for (var i = 0; i < passLength; i++) {
+      
+      var newPass = number[Math.floor(Math.random() * number.length)]
+      finalPass.push(newPass);
+
+    }
   }
 
   else if(confirmSymbol){
-    for (var i = 0; i < passLength; i++) {}
+    for (var i = 0; i < passLength; i++) {
+      var newPass = symbol[Math.floor(Math.random() * symbol.length)]
+      finalPass.push(newPass)
+    }
   }
 
   else if(confirmAlphaUpper){
-    for (var i = 0; i < passLength; i++) {}
+    for (var i = 0; i < passLength; i++) {
+      var newPass = alphaUpper[Math.floor(Math.random() * alphaUpper.length)]
+      finalPass.push(newPass)
+    }
   }
 
   else if(confirmAlphaLower){
-    for (var i = 0; i < passLength; i++) {}
+    for (var i = 0; i < passLength; i++) {
+      var newPass = alphaLower[Math.floor(Math.random() * alphaLower.length)]
+      finalPass.push(newPass)}
 
   }
-
+  console.log(finalPass);
+  return finalPass.join("");
 }
 
 
